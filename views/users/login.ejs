@@ -1,0 +1,31 @@
+<% layout('layout/boilerplate.ejs') %>
+    <div class="container d-flex justify-content-center align-items-center">
+        <div class="row">
+            <div class="col-md-8 offset-md-3 col-xl-8 offset-xl-2">
+                <div class="card shadow">
+                    <img src="https://media.istockphoto.com/id/614333886/photo/illuminated-green-tent-under-stars-at-night-forest.jpg?b=1&s=170667a&w=0&k=20&c=vNdWKW6dIaM8MT6HL9Hse_2LI0LEyoZe8AItyMy-QjI=" alt="" class="card-top-img">
+                    <div class="card-body">
+                        <h5 class="card-title">Login</h5>
+                        <form action="/login" method="post" class="validated-form" novalidate>
+                            <div class="mb-3">
+                                <label class="form-label" for="username">Username</label>
+                                <input class="form-control" type="text" id="username" name="username" autofocus required>
+                                <div class="valid-feedback">Looks Good</div>
+                                <div class="invalid-feedback">Please provide a valid Username</div>
+                            </div>
+                            <div class="mb-3">
+                                <label class="form-label" for="password">Password</label>
+                                <input class="form-control" type="password" id="password" name="password" required>
+                                <div class="valid-feedback">Looks Good</div>
+                                <div class="invalid-feedback">Please provide a valid Password</div>
+                            </div>
+                            <div class="d-grid gap-2">
+                                <button class="btn btn-success btn-block">Login</button>
+                            </div>
+
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
